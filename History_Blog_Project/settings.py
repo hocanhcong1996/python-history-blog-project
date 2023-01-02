@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-hhk27bq91k_$fa0pf@wnn=+-%m^j(5j1_!x2vi=f(%wc)m^2h9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh','127.0.0.1']
 
 
 # Application definition
@@ -87,12 +87,27 @@ WSGI_APPLICATION = 'History_Blog_Project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
+# 02/01/2023: Convert database from SQlite to PostgreSQL
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'history-blog-project',
+        'USER':'postgres',
+        'PASSWORD': 'hocanhcong1996',
+        'PORT':'5432',
+        'HOST':'localhost'
     }
 }
+
 
 
 # Password validation
