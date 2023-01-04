@@ -14,6 +14,3 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'History_Blog_Project.settings')
 
 application = get_wsgi_application()
-
-# 2/1/2023 Deploy to Vercel
-app = application
