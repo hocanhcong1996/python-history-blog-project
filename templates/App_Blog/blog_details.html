@@ -2,6 +2,13 @@
 {% load crispy_forms_tags %}
 {% block title %} Blog Details {% endblock %} 
 {% block body_block %}
+{%if is_logged_in == None %}
+    {% if is_comment == True %}
+      <div class="row">
+          <h2 class="alert alert-danger">Hãy đăng ký và đăng nhập tài khoản trước khi bình luận trong bài viết này</h2>
+      </div>
+    {% endif %}
+{% endif %}
 <div class="row">
     <div class="col-sm-6">
       <h2>{{blog.blog_title}}</h2>
