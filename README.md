@@ -39,14 +39,13 @@ DATABASES = {
 - Bước 1: Kiểm tra version python bằng cách mở terminal có path vào đến thư mục root python-history-blog-project 
 và gõ lệnh python xem có hiển thị version hay không? Nếu không được thì kiểm tra lại cho đến khi nào có biến môi trường python
 - Bước 2: Chạy các lệnh sau để cập nhật một số thư viện cho project
-	+"python -m pip install Django" 
-	+"python.exe -m pip install --upgrade pip"
-	+"pip install django-crispy-forms"
-	+"pip install psycopg2"
-	+"python -m pip install --upgrade pip"
-	+"python -m pip install --upgrade Pillow"
-	+"python manage.py createsuperuser"
-	+"pip install Unidecode"
+	- "python -m pip install Django" 
+	- "python.exe -m pip install --upgrade pip"
+	- "pip install django-crispy-forms"
+	- "pip install psycopg2"
+	- "python -m pip install --upgrade pip"
+	- "python -m pip install --upgrade Pillow"
+	- "pip install Unidecode"
 
 *Thao tác để kết nối project và database và runserver
 - Bước 1: Chạy lệnh "py manage.py makemigrations" để cập nhật tất cả các sự thay đổi của model
